@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Transaction Details</h2>
+        <input type="number" id="step" placeholder="Step" required>
+        <input type="number" id="type" placeholder="Type (1: PAYMENT, 2: CASH_OUT, 3: CASH_IN, 4: TRANSFER, 5: DEBIT)" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="text" id="nameOrig" placeholder="Name Orig" required>
+        <input type="number" id="oldbalanceOrg" placeholder="Old Balance Orig" required>
+        <input type="number" id="newbalanceOrig" placeholder="New Balance Orig" required>
+        <input type="text" id="nameDest" placeholder="Name Dest" required>
+        <input type="number" id="oldbalanceDest" placeholder="Old Balance Dest" required>
+        <input type="number" id="newbalanceDest" placeholder="New Balance Dest" required>
+        <input type="number" id="isFlaggedFraud" placeholder="Is Flagged Fraud (0 or 1)" required>
+        <button onclick="predictFraud()">Predict Fraud</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
